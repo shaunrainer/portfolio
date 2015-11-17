@@ -1,0 +1,14 @@
+### PHPStorm ###
+.idea
+.idea/workspace.xml
+.DS_Store
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+### grunt ###
+node_modules/
+.tmp/
