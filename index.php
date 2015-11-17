@@ -487,7 +487,7 @@
         <!-- Footer End -->
 
         <!-- Cadfolio Modal -->
-        <div class="modal fade" id="cadfolio-modal" tabindex="-1" role="dialog" aria-labelledby="cadfolioModal">
+        <div class="modal fade" id="cadfolio-modal" tabindex="-1" role="dialog" aria-labelledby="cadfolioModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -500,7 +500,7 @@
 
                             <div class="col-sm-6">
 
-                                <h1 class="modal-heading">
+                                <h1 id="cadfolioModalLabel" class="modal-heading">
                                     Cadfolio
                                 </h1>
 
@@ -543,7 +543,7 @@
         </div>
 
         <!-- Albarose Modal -->
-        <div class="modal fade" id="albarose-modal" tabindex="-1" role="dialog" aria-labelledby="albaroseModal">
+        <div class="modal fade" id="albarose-modal" tabindex="-1" role="dialog" aria-labelledby="albaroseModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -556,7 +556,7 @@
 
                             <div class="col-sm-6">
 
-                                <h1 class="modal-heading">
+                                <h1 id="albaroseModalLabel" class="modal-heading">
                                     Albarose
                                 </h1>
 
@@ -596,7 +596,7 @@
         </div>
 
         <!-- Goldmark Modal -->
-        <div class="modal fade" id="goldmark-modal" tabindex="-1" role="dialog" aria-labelledby="goldmarkModal">
+        <div class="modal fade" id="goldmark-modal" tabindex="-1" role="dialog" aria-labelledby="goldmarkModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -609,7 +609,7 @@
 
                             <div class="col-sm-6">
 
-                                <h1 class="modal-heading">
+                                <h1 id="goldmarkModalLabel" class="modal-heading">
                                     Goldmark UK
                                 </h1>
 
@@ -645,7 +645,7 @@
         </div>
 
         <!-- Next Day Wax Modal -->
-        <div class="modal fade" id="ndw-modal" tabindex="-1" role="dialog" aria-labelledby="ndwModal">
+        <div class="modal fade" id="ndw-modal" tabindex="-1" role="dialog" aria-labelledby="ndwModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -658,7 +658,7 @@
 
                             <div class="col-sm-6">
 
-                                <h1 class="modal-heading">
+                                <h1 id="ndwModalLabel" class="modal-heading">
                                     Next Day Wax
                                 </h1>
 
@@ -681,7 +681,7 @@
         </div>
 
         <!-- Surecert Modal -->
-        <div class="modal fade" id="surecert-modal" tabindex="-1" role="dialog" aria-labelledby="surecertModal">
+        <div class="modal fade" id="surecert-modal" tabindex="-1" role="dialog" aria-labelledby="surecertModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -694,7 +694,7 @@
 
                             <div class="col-sm-6">
 
-                                <h1 class="modal-heading">
+                                <h1 id="surecertModalLabel" class="modal-heading">
                                     Surecert
                                 </h1>
 
@@ -727,7 +727,7 @@
         </div>
 
         <!-- Hurley Spice Modal -->
-        <div class="modal fade" id="hs-modal" tabindex="-1" role="dialog" aria-labelledby="hsModal">
+        <div class="modal fade" id="hs-modal" tabindex="-1" role="dialog" aria-labelledby="hsModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -740,7 +740,7 @@
 
                             <div class="col-sm-6">
 
-                                <h1 class="modal-heading">
+                                <h1 id="hsModalLabel" class="modal-heading">
                                     Hurley Spice
                                 </h1>
 

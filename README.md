@@ -9,7 +9,7 @@ You can view my online portfolio [Here](http://www.shaunrainer.com)
 
 ##Main Features
 
-- Bootstrap for mobile optimization
+- Bootstrap for mobile optimisation
 - Grunt for running tasks
 - Bower.js for package management
 - Node.js server side
