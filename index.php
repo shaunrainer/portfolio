@@ -245,14 +245,13 @@
                         <h5 class="about-me-header">Career</h5>
                         <p>
                             Once finishing college I started a job as a computer technician, however after a year with a
-                            lack of work I was forced to leave. Working independently I became a freelance web developer,
-                            developing websites for a film production company and Indian restaurant (Hurley Spice).<br/>
-                            A job arose in a jewellery company as a junior web developer where I joined a small team of 2 senior
-                            web developers, learning all about laravel and web developing commercially and how to work
-                            productively developing in a team on a large project using git and GitHub.
+                            lack of work I was forced to leave. Working independently, I became a freelance web developer,
+                            developing websites for a film production company and a Indian restaurant (Hurley Spice).<br/>
+                            A job arose in a jewellery company (Alba Rose) as a junior web developer where I joined a
+                            small team of 2 senior web developers, learning all about laravel and web developing commercially.
                         </p>
 
-                        <a href="cv.pdf" class="btn btn-default">View My CV</a>
+                        <a href="Shaun-Rainer-CV.pdf" class="btn btn-default">View My Circulum Vite</a>
 
                     </div>
                 </div>
