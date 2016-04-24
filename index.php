@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
         <meta name="description" content="Shaun Rainer is a Web Developer specialising in Front-end &amp; Back-end Development. With 2 years commercial experience using HTML/CSS, PHP/mySQL, laravel and Git/GitHub"/>
-        <meta name="keywords" content="front-end developer, front-end development, web designer, PHP, mySQL, laravel, Git, GitHub"/>
+        <meta name="keywords" content="front-end developer, front-end development, web designer, web developer, essex web developer, essex web designer, southend web developer, shaun rainer, shaun, rainer, PHP, mySQL, laravel, Git, GitHub"/>
         <link rel="canonical" href="http://shaunrainer.com/" />
         <link rel="publisher" href="https://uk.linkedin.com/in/shaun-rainer-642240103"/>
 
@@ -53,8 +53,9 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="#" class="navbar-brand brand">
-                        <img src="img/logo-black.png" alt="Shaun Rainer" class="visible-xs" />
+                        <img src="img/logo-black.png" alt="Shaun Raine" class="visible-xs" />
                         <img src="img/logo-white.png" alt="Shaun Rainer" class="hidden-xs" />
+                        <h1 class="hidden-xs hidden-sm hidden-md hidden-lg">Shaun Rainer - Web Developer</h1>
                     </a>
                 </div>
 
@@ -131,7 +132,7 @@
                             PHP
                         </h3>
                         <h3 class="skill-odd" data-sr="enter left, over 1.5s">
-                            mySQL
+                            MySQL
                         </h3>
                         <h3 class="skill-even" data-sr="enter left, over 1.5s">
                             XML/JSON
@@ -140,7 +141,7 @@
                             AJAX
                         </h3>
                          <h3 class="skill-even" data-sr="enter left, over 1.5s">
-                            JavaScript (Including jQuery)
+                            JavaScript (including jQuery)
                         </h3>
 
                     </div>
@@ -163,7 +164,7 @@
                             Grunt.js
                         </h3>
                         <h3 class="skill-even" data-sr="enter right, over 1.5s">
-                            Bower.io
+                            WordPress
                         </h3>
                         <h3 class="skill-odd" data-sr="enter right, over 1.5s">
                             Git/GitHub
@@ -186,7 +187,7 @@
                             Grunt.js
                         </h5>
                         <h5 class="skill-even" data-sr="enter right, over 1s">
-                            Bower.io
+                            WordPress
                         </h5>
                         <h5 class="skill-odd" data-sr="enter right, over 1s">
                             Git/Github
@@ -206,7 +207,7 @@
                             PHP
                         </h5>
                         <h5 class="skill-odd" data-sr="enter left, over 1s">
-                            mySql
+                            MySql
                         </h5>
                         <h5 class="skill-even" data-sr="enter left, over 1s">
                             XML/JSON
@@ -215,7 +216,7 @@
                             AJAX
                         </h5>
                         <h5 class="skill-even" data-sr="enter left, over 1s">
-                            JavaScript (Including jQuery)
+                            JavaScript (including jQuery)
                         </h5>
 
                     </div>
@@ -244,14 +245,13 @@
                         <h5 class="about-me-header">Career</h5>
                         <p>
                             Once finishing college I started a job as a computer technician, however after a year with a
-                            lack of work I was forced to leave. Working independently I became a freelance web developer,
-                            developing websites for a film production company and Indian restaurant (Hurley Spice).<br/>
-                            A job arose in a jewellery company as a junior web developer where I joined a small team of 2 senior
-                            web developers, learning all about laravel and web developing commercially and how to work
-                            productively developing in a team on a large project using git and GitHub.
+                            lack of work I was forced to leave. Working independently, I became a freelance web developer,
+                            developing websites for a film production company and a Indian restaurant (Hurley Spice).<br/>
+                            A job arose in a jewellery company (Alba Rose) as a junior web developer where I joined a
+                            small team of 2 senior web developers, learning all about laravel and web developing commercially.
                         </p>
 
-                        <a href="cv.pdf" class="btn btn-default">View My CV</a>
+                        <a href="Shaun-Rainer-CV.pdf" class="btn btn-default">View My Circulum Vite</a>
 
                     </div>
                 </div>
@@ -500,9 +500,9 @@
 
                             <div class="col-sm-6">
 
-                                <h1 id="cadfolioModalLabel" class="modal-heading">
+                                <h2 id="cadfolioModalLabel" class="modal-heading">
                                     Cadfolio
-                                </h1>
+                                </h2>
 
                                 <button type="button" class="close modal-close hidden-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
@@ -556,9 +556,9 @@
 
                             <div class="col-sm-6">
 
-                                <h1 id="albaroseModalLabel" class="modal-heading">
+                                <h2 id="albaroseModalLabel" class="modal-heading">
                                     Albarose
-                                </h1>
+                                </h2>
 
                                 <button type="button" class="close modal-close hidden-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
@@ -609,9 +609,9 @@
 
                             <div class="col-sm-6">
 
-                                <h1 id="goldmarkModalLabel" class="modal-heading">
+                                <h2 id="goldmarkModalLabel" class="modal-heading">
                                     Goldmark UK
-                                </h1>
+                                </h2>
 
                                 <button type="button" class="close modal-close hidden-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
@@ -658,9 +658,9 @@
 
                             <div class="col-sm-6">
 
-                                <h1 id="ndwModalLabel" class="modal-heading">
+                                <h2 id="ndwModalLabel" class="modal-heading">
                                     Next Day Wax
-                                </h1>
+                                </h2>
 
                                 <button type="button" class="close modal-close hidden-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
@@ -694,9 +694,9 @@
 
                             <div class="col-sm-6">
 
-                                <h1 id="surecertModalLabel" class="modal-heading">
+                                <h2 id="surecertModalLabel" class="modal-heading">
                                     Surecert
-                                </h1>
+                                </h2>
 
                                 <button type="button" class="close modal-close hidden-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
@@ -740,9 +740,9 @@
 
                             <div class="col-sm-6">
 
-                                <h1 id="hsModalLabel" class="modal-heading">
+                                <h2 id="hsModalLabel" class="modal-heading">
                                     Hurley Spice
-                                </h1>
+                                </h2>
 
                                 <button type="button" class="close modal-close hidden-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
