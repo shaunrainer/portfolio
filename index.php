@@ -106,9 +106,9 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <h2 data-sr>
+                        <h1 data-sr>
                             Hi, My name is <strong>Shaun</strong>, I am a Back-End &amp; Front-End <strong>Web Developer</strong>.
-                        </h2>
+                        </h1>
                     </div>
 
                 </div>
