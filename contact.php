@@ -1,52 +1,79 @@
 <?php
 
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if(empty($_POST) || !isset($_POST)) {
 
-        // Get the form fields and remove whitespace.
-        $name = strip_tags(trim($_POST["name"]));
-        $name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = $_POST["email"];
-        $message = trim($_POST["message"]);
-
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR empty($email)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
-            exit;
-        }
-
-        $recipient = "shaun@shaunrainer.com";
-
-        // Set the email subject.
-        $subject = "New contact from $name";
-
-        // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Message:\n$message\n";
-
-        // Build the email headers.
-        $headers  = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $headers .= 'From: '. $name .' <'. $email .'>'. "\r\n";
-
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You! Your message has been sent.";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
+        ajaxResponse('error', 'Post cannot be empty.');
 
     } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+
+        $postData = $_POST;
+        $dataString = implode($postData,",");
+
+        $mailgun = sendMailgun($postData);
+
+        if($mailgun) {
+
+            ajaxResponse('success', 'Great success.', $postData, $mailgun);
+
+        } else {
+
+            ajaxResponse('error', 'Mailgun did not connect properly.', $postData, $mailgun);
+
+        }
+
+    }
+
+    function ajaxResponse($status, $message, $data = NULL, $mg = NULL) {
+        $response = array (
+            'status' => $status,
+            'message' => $message,
+            'data' => $data,
+            'mailgun' => $mg
+        );
+        $output = json_encode($response);
+        exit($output);
+    }
+
+    function sendMailgun($data) {
+
+        $api_key = 'key-ce102d6acbc1cd2efe09a0b186c34a61';
+        $api_domain = 'shaunrainer.com';
+        $send_to = 'shaun@shaunrainer.com';
+
+        $name = $data['name'];
+        $email = $data['email'];
+        $content = $data['message'];
+
+        $messageBody = "Contact: $name ($email)\n\nMessage: $content";
+
+        $config = array();
+        $config['api_key'] = $api_key;
+        $config['api_url'] = 'https://api.mailgun.net/v2/'.$api_domain.'/messages';
+
+        $message = array();
+        $message['from'] = $email;
+        $message['to'] = $send_to;
+        $message['h:Reply-To'] = $email;
+        $message['subject'] = "Contact from ShaunRainer.com";
+        $message['text'] = $messageBody;
+
+        $curl = curl_init();
+
+        curl_setopt($curl, CURLOPT_URL, $config['api_url']);
+        curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        curl_setopt($curl, CURLOPT_USERPWD, "api:{$config['api_key']}");
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt($curl, CURLOPT_POSTFIELDS,$message);
+
+        $result = curl_exec($curl);
+
+        curl_close($curl);
+        return $result;
+
     }
 
 ?>

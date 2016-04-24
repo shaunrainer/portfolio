@@ -60,14 +60,21 @@ $(document).ready(function(){
         submitHandler: function(form) {
 
             $.ajax({
-                type: form.method,
-                url: form.action,
-                data: $(form).serialize(),
-                success: function(data){
+                type     : form.method,
+                cache    : false,
+                url      : form.action,
+                data     : $(form).serialize(),
+                success  : function(data) {
                     $('#contact-form-wrapper').hide();
                     $('#msg-sent-wrapper').fadeIn();
+                },
+                error  : function(data) {
+                    $('#contact-form-wrapper').hide();
+                    $('#msg-failed-wrapper').fadeIn();
                 }
             });
+
+            return false;
 
         }
     });

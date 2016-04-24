@@ -451,6 +451,11 @@
                         <p class="c-white">If you do not get a reply within 14 days please try emailing shaun@shaunrainer.com, Thank you</p>
                     </div>
 
+                    <div id="msg-failed-wrapper">
+                        <h4 class="msg-failed">Message Failed to Send :(</h4>
+                        <p class="c-white">Please send your message to the following email addresss shaun@shaunrainer.com, Sorry for the inconvenience.</p>
+                    </div>
+
                 </div>
             </div>
 

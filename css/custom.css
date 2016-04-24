@@ -460,7 +460,8 @@ textarea:-ms-input-placeholder {
     transition:.5s;
 }
 
-#msg-sent-wrapper{
+#msg-sent-wrapper,
+#msg-failed-wrapper {
     text-align: center;
     height: 244px;
     display: none;
@@ -468,7 +469,11 @@ textarea:-ms-input-placeholder {
 }
 
 .msg-sent {
-    color:#fff;
+    color:#9BBCC1;
+}
+
+.msg-failed {
+    color:#C2223F;
 }
 
 #contact-form .error {
